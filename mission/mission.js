@@ -12,7 +12,7 @@ function changeTheme() {
         console.log("dark");
     }
     else {
-        document.getElementById("body").className.remove = "dark";
+        document.getElementById("body").remove = ".dark";
         console.log("light");
     }
     console.log(selecter.value);
