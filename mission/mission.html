@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Statement</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="mission.js" defer></script>
 </head>
-<body>
+<body id="body">
     <div class="boarder">
+        <select name="theme" id="theme">
+            <option value="light"><p>light</p></option>
+            <option value="dark"><p>dark</p></option>
+        </select>
         <div>
             <h1>MISSION STATEMENT</h1>
             <p id="subtitle">BRIGHAM YOUNG UNIVERSITY-IDAHO</p>
@@ -22,8 +27,9 @@
                     <li>Delivering education that is affordable for students and the Church.</li>
                 </div>
                 
-                <img src="../images/byui-logo_blue.webp" alt="logo of BYUI">
+                <img id="byui-logo" src="../images/byui-logo_blue.webp" alt="logo of BYUI">
             </div>
     </div>
+    <script src="mission.js"></script>
 </body>
 </html>
