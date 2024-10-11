@@ -7,17 +7,22 @@
     <meta name="Author" content="Jonah Olsen">
     <title>Cool Pics 📷</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="coolpics.js" defer></script>
 </head>
 <body>
+    <div class="viewer">
+        <button class="close-viewer">X</button>
+        <img src="../coolpics/images/norris-full.jpeg" alt="large picture of mountains">
+    </div>
     <header>
         <h1>Cool Pics 📷</h1>
         <ul>
-            <button class="menu">Menu</button>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="places.html">Places</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <button id="menu">Menu</button>
+            <li class="menuItems hidden"><a href="index.html">Home</a></li>
+            <li class="menuItems hidden"><a href="people.html">People</a></li>
+            <li class="menuItems hidden"><a href="places.html">Places</a></li>
+            <li class="menuItems hidden"><a href="about.html">About</a></li>
+            <li class="menuItems hidden"><a href="contact.html">Contact</a></li>
         </ul>
     </header>
     <main>
@@ -57,6 +62,5 @@
         <a href="jonaholsen.com">jonaholsen.com</a>
         <p>©2024 Not a real site 😀</p>
     </footer>
-    <script src="coolpics.js"></script>
 </body>
 </html>
