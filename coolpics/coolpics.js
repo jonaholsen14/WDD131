@@ -33,7 +33,7 @@ function viewHandler(event) {
         // get the src attribute from that element and 'split' it on the "-"
         let src = image.src.split("-");
         // construct the new image file name by adding "-full.jpeg" to the first part of the array from the previous step
-        let newSrc = src[1] + "-full.jpeg";
+        let newSrc = src[0] + "-full.jpeg";
         // insert the viewerTemplate into the top of the body element
         // (element.insertAdjacentHTML("afterbegin", htmltoinsert))
         document.body.insertAdjacentHTML("afterbegin", viewerTemplate(newSrc, image.alt));
