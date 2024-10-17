@@ -1,0 +1,133 @@
+/* <body>
+<h1 class="title">Kids Read For Fun</h1>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Archive</a></li>
+            <li><a href="contact.html">Search</a></li>
+        </ul>
+    </nav>
+    <section>
+        <ul>
+            <div class="book1">
+                <div class="right">
+                    <h2 class="booktitle">Septumus Heap Book One:Magyk</h2>
+                    <img class="bookcover" src="" alt="">
+                    <p class="bookdescription" >This is a description of the book. It was soooooper nice! I really enjoyed the words and specifically when they became pages.</p>
+                </div>
+                <div class="left">
+                    <h3>July 5, 2022</h3>
+                    <h3>10-4</h3>
+                    <h3>Fantasy</h3>
+                </div>
+            </div>
+        </ul>
+    </section>
+    <div>
+        <p>Filter form will go here</p>
+    </div>
+</body> */
+:root {
+    --color-primary: #904d00;
+    --color-secondary: #904d00;
+    --color-light: #fefae0;
+    --color-dark: #283618;
+    --color-complimentary: #546618;
+}
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: var(--color-primary);
+    text-align: center;
+    font-family: 'Matemasie', cursive;
+    font-size: 3em;
+}
+nav {
+    padding: 1em;
+    padding-bottom: .3em;
+    padding-top: .3em;
+    /* add two lines one above and one below */
+    border-top: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    max-width: 90%;
+}
+nav li {
+    margin: 0 1em;
+}
+nav a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 1.3em;
+}
+/* nav animations */
+nav a:hover {
+    color: var(--color-complimentary);
+}
+nav a:active {
+    color: var(--color-dark);
+}
+.skiptocontent a {
+	/* set the element to absolute positioning */
+	/* move it off screen */
+	/* Make sure it will be on the left edge of the screen */
+	/* Change the background and color to something that stands out */
+    position: absolute;
+    left: -999em;
+    background-color: #333;
+
+}
+.skiptocontent a:focus {
+	/* Move it back on when focused */
+    /* Make sure it is visible */
+    position: static;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 1em;
+}
+img {
+    max-width: 60%;
+    height: auto;
+}
+.left {
+    grid-column: 1 / 2;
+    color: var(--color-complimentary);
+    padding: 1em;
+}
+.leftelements {
+    font-size: 1em;
+    text-align: left;
+}
+.right {
+    grid-column: 2 / 3;
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    padding: 1em;
+}
+.filterform {
+    grid-column: 3 / 4;
+    background-color: var(--color-complimentary);
+    color: var(--color-light);
+    padding: 1em;
+    margin: 1em;
+}
