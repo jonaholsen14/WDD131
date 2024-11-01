@@ -1,0 +1,80 @@
+/* form-demo.css */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.errors > p {
+    border: 1px solid red;
+    padding: 0.5em;
+}
+/* Style the select arrow for Safari */
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Style the select arrow for other browsers */
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.hide {
+    display: none; /* Initially hide the credit card input and label */
+}
+/* <form id="checkoutForm" action="completed.html">
+        <!-- name, email, address, payment method drop down list, credit card number, paypal username -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required />
+        <label for="payment">Payment Method</label>
+        <select id="payment" name="payment" required>
+            <option value="credit">Credit Card</option>
+            <option value="paypal">PayPal</option>
+        </select>
+        <label for="ccNum">Credit Card Number</label>
+        <input type="text" id="ccNum" name="ccNum" />
+        <label for="paypal">PayPal Username</label>
+        <input type="text" id="paypal" name="paypal" />
+        <button type="submit">Place Order</button>
+    </form> */
+
+input{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+select{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin: 10%;
+}
+#orderbtn {
+    width: 30%;
+    height: 150%;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
