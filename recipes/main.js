@@ -60,9 +60,10 @@ function display_rating(rating) {
         return '⭐'.repeat(Math.floor(rating)) + create_emoji_half()
     }
 }
+
+// bro this doesn't even work why is there not a half star emoji that doesn't even makie seanse.
 function create_emoji_half() {
     return '1/2'
-    
 }
 
 document.getElementById("search-button").addEventListener("click", search);
@@ -74,6 +75,9 @@ function search(event) {
     const filteredRecipes = recipes.filter(recipefilter);
     displayRecipes(filteredRecipes);
     console.log(filteredRecipes)
+
+    //this code is an absolute mess but I just want to move on.
+
     function recipefilter(recipe) {
         return recipe.name.toLowerCase().includes(query) || recipe.description.toLowerCase().includes(query) || recipe.tags.find((item) => item.toLowerCase().includes(query)) || recipe.recipeIngredient.find((item) => item.toLowerCase().includes(query))
     }
